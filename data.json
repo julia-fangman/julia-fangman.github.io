@@ -1,0 +1,60 @@
+{
+  "name": "Abel Garcia",
+  "initials": "AG",
+  "tagline": "Digital Forensics & Information Technology",
+  "bio": "I am a technology-minded professional with experience across IT Management, Application Development, and Public Safety.\n\nI am currently serving as a Law Enforcement Officer in the State of Missouri with an emphasis on Digital Forensics within MacOS, Windows, Linux, and Mobile environments.",
+  "emails": {
+    "tech": "abel@gtgwebmsp.com",
+    "leo": "agarcia@buchmo.gov"
+  },
+  "social": {
+    "github": "https://github.com/abelss0n",
+    "instagram": "https://instagram.com/abelss0n"
+  },
+  "education": [
+    { "title": "Class A Peace Officer", "date": "2022, Active", "issuer": "Missouri POST", "badge": "assets/badges/moleo.png" },
+    { "title": "Cellebrite Certified Operator", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/cco.png" },
+    { "title": "Cellebrite Certified Physical Analyst", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/ccpa.png" },
+    { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025", "issuer": "Cellebrite", "badge": "assets/badges/casa.png" }
+  ],
+  "work": [
+    {
+      "role": "Investigator",
+      "org": "Buchanan County Sheriff's Office",
+      "period": "2023 — Present",
+      "location": "Buchanan County, MO",
+      "bullets": [
+        "Acted as a regional Task Force Officer with the Northwest Missouri Cyber Crimes Task Force.",
+        "Conducted criminal investigations into internet crimes against children across multiple counties.",
+        "Conducted digital forensic examinations on mobile devices used in crimes against persons.",
+        "Condcuted digital forensic examinations on desktop, laptop, mobile, and various digital and physical storage devices used in crimes against children.",
+        "Prepared legal process for the preservation, subpoena, and searches of electronic service provider data.",
+        "Maintained accurate and specific documentation and reporting on the examination of evidence and the investigation of criminal activities.",
+        "Assisted with local criminal investigations involving a technical component."
+      ]
+    },
+    {
+      "role": "Solutions Engineer",
+      "org": "GTGweb MSP",
+      "period": "2020 — Present",
+      "location": "Round Rock, TX",
+      "bullets": [
+        "Managed web hosting, email, and endpoint (workstation/server) maintenance for SMB clients.",
+        "Advised on application and tool implementation, as well as created automation scripts for these tools as needed.",
+        "Developed applications and scripts as needed for existing client tools.",
+        "Conducted training of personnel as needed for onboarding, taking ownership of all technical support requests and implementations."
+      ]
+    },
+    {
+      "role": "Police Officer",
+      "org": "Maryville Public Safety",
+      "period": "2022 — 2023",
+      "location": "Maryville, MO",
+      "bullets": [
+        "Conducted vehiclular and foot patrols of city roadways, parks, and both public and residential properties on twelve hour shifts.",
+        "Enforced state statutes and municipal ordinances within the city limits through the issuance of citations and execution of arrests/warrants.",
+        "Maintained required certifications and equipment as required by agency leadership."
+      ]
+    }
+  ]
+}
