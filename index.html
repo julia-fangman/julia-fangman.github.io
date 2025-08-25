@@ -49,9 +49,29 @@
 
       <!-- Education / Training / Certs -->
       <section id="education" class="card" aria-labelledby="ed-h">
-        <h2 id="ed-h">Education, Training, and Certifications</h2>
-        <p class="muted">If the certification or license can expire, it will indicate active/expired after the year received. If it does not, it will simply contain the year that it was received. The list is in ascending order.</p>
-        <div class="edulist" id="edu-list" aria-live="polite"></div>
+      <h2 id="ed-h">Education, Training, and Certifications</h2>
+      <p class="muted">
+        If the certification or license can expire, it will indicate active/expired after the year received.
+        If it does not, it will simply contain the year that it was received. 
+        All training will include the number of hours spent in the training. 
+        The list is in ascending order.
+      </p>
+
+      <!-- New grouped lists -->
+      <div class="edugroup">
+        <h3>Education</h3>
+        <div class="edulist" id="edu-education" aria-live="polite"></div>
+      </div>
+
+      <div class="edugroup">
+        <h3>Certifications</h3>
+        <div class="edulist" id="edu-certification" aria-live="polite"></div>
+      </div>
+
+      <div class="edugroup">
+        <h3>Training</h3>
+        <div class="edulist" id="edu-training" aria-live="polite"></div>
+      </div>
       </section>
 
       <!-- Work History -->

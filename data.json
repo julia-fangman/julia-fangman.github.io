@@ -12,10 +12,16 @@
     "instagram": "https://instagram.com/abelss0n"
   },
   "education": [
-    { "title": "Class A Peace Officer", "date": "2022, Active", "issuer": "Missouri POST", "badge": "assets/badges/moleo.png" },
-    { "title": "Cellebrite Certified Operator", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/cco.png" },
-    { "title": "Cellebrite Certified Physical Analyst", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/ccpa.png" },
-    { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025", "issuer": "Cellebrite", "badge": "assets/badges/casa.png" }
+    { "title": "High School Diploma, STEM", "date": "2015", "issuer": "Stony Point High School", "badge": "assets/badges/rrisd.png", "kind": "education" },
+    { "title": "Regional Law Enforcement Academy", "date": "2022", "issuer": "Missouri Western State University", "badge": "assets/badges/mwsu.png", "kind": "education" },
+    { "title": "Class A Peace Officer", "date": "2022, Active", "issuer": "Missouri POST", "badge": "assets/badges/moleo.png", "kind": "certification" },
+    { "title": "Cellebrite Certified Operator", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/cco.png", "kind": "certification" },
+    { "title": "Cellebrite Certified Physical Analyst", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/ccpa.png", "kind": "certification" },
+    { "title": "Advanced Digital Forensic Analysis: Windows", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
+    { "title": "Advanced Digital Forensic Analysis: MacOS", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
+    { "title": "Advanced Digital Forensic Analysis: Linux", "date": "2024, 14 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
+    { "title": "Advanced Digital Forensic Analysis: iOS & Android", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
+    { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025", "issuer": "Cellebrite", "badge": "assets/badges/casa.png", "kind": "certification" }
   ],
   "work": [
     {
@@ -36,7 +42,7 @@
     {
       "role": "Solutions Engineer",
       "org": "GTGweb MSP",
-      "period": "2020 — Present",
+      "period": "2018 — Present",
       "location": "Round Rock, TX",
       "bullets": [
         "Managed web hosting, email, and endpoint (workstation/server) maintenance for SMB clients.",
