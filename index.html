@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abel Garcia</title>
+  <meta name="description" content="Abel Garcia - Personal Resume Website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --panel: #111520;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --brand: #60a5fa;
+      --brand-2: #a78bfa;
+      --ring: #7dd3fc;
+      --ok: #34d399;
+      --warn: #f59e0b;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; 
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+    }
+    a { color: inherit; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    header.card { padding: 24px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    .brand {
+      display: flex; align-items: center; gap: 16px;
+    }
+    .avatar { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-2)); display: grid; place-items: center; font-weight: 800; color: white; letter-spacing: .5px; }
+    .title h1 { margin: 0; font-size: 1.5rem; }
+    .title p { margin: 2px 0 0; color: var(--muted); font-size: .95rem; }
+
+    .nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .nav button, .nav a.button {
+      appearance: none; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04); color: var(--text);
+      padding: 10px 14px; border-radius: 12px; cursor: pointer; font-weight: 600; letter-spacing: .2px; text-decoration: none;
+      transition: transform .08s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .nav button:hover, .nav a.button:hover { border-color: rgba(255,255,255,.28); transform: translateY(-1px); }
+    .nav button[aria-current="page"] { outline: 2px solid var(--ring); outline-offset: 2px; background: rgba(125, 211, 252, .08); }
+    .nav a.button.primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); border: none; }
+
+    main { margin-top: 18px; }
+    section.card { padding: 24px; display: none; }
+    section.card.active { display: block; }
+
+    .row { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    @media (min-width: 860px) { .row { grid-template-columns: 1.1fr .9fr; } }
+
+    .muted { color: var(--muted); }
+    .pill { font-size: .8rem; padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); }
+    .icons { display: flex; gap: 10px; align-items: center; }
+    .icons a { display: inline-flex; padding: 8px; border-radius: 12px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04); }
+    .icons a:hover { border-color: rgba(255,255,255,.28); transform: translateY(-1px); }
+
+    .edulist { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    .edu { display: grid; grid-template-columns: 60px 1fr; gap: 14px; align-items: center; padding: 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.03); }
+    .edu img { width: 60px; height: 60px; object-fit: contain; border-radius: 10px; background: transparent; }
+    .edu h4 { margin: 0; }
+    .edu p { margin: 4px 0 0; color: var(--muted); }
+
+    .timeline { position: relative; margin: 8px 0 0; }
+    .timeline::before { content: ""; position: absolute; left: 14px; top: 0; bottom: 0; width: 2px; background: rgba(255,255,255,.12); }
+    .job { position: relative; margin-left: 38px; padding: 12px 12px 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.03); }
+    .job::before { content: ""; position: absolute; left: -26px; top: 14px; width: 12px; height: 12px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: 0 0 0 3px rgba(99,102,241,.25); }
+    .job h4 { margin: 0; font-size: 1rem; }
+    .job .meta { margin-top: 4px; font-size: .9rem; color: var(--muted); }
+    .job p { margin: 8px 0 0; }
+
+    footer { text-align: center; color: var(--muted); margin: 24px 0 12px; font-size: .9rem; }
+    .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header / Brand + Nav -->
+    <header class="card" role="banner">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true" id="initials">AG</div>
+        <div class="title">
+          <h1 id="name">Your Name</h1>
+          <p><span class="muted" id="tagline">Digital Forensics & Information Technology</span></p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <button class="tab" data-target="about" aria-current="page">About</button>
+        <button class="tab" data-target="education">Education & Training</button>
+        <button class="tab" data-target="work">Work History</button>
+        <a class="button primary" href="agarcia.pdf" download aria-label="Download resume as PDF">Download Résumé</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <section id="about" class="card active" aria-labelledby="about-h">
+        <div class="row">
+          <div>
+            <h2 id="about-h">About</h2>
+            <div id="bio"></div>
+            <p>
+              <span class="pill">Available upon request.</span>
+            </p>
+          </div>
+          <aside>
+            <h3>Contact</h3>
+            <div class="icons" id="contact-icons" aria-label="Contact links"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Education / Training / Certs -->
+      <section id="education" class="card" aria-labelledby="ed-h">
+        <h2 id="ed-h">Education, Training, and Certifications</h2>
+        <p class="muted">If the certification or license can expire, it will indicate active/expired after the year received. If it does not, it will simply contain the year that it was received. The list is in ascending order.</p>
+        <div class="edulist" id="edu-list" aria-live="polite"></div>
+      </section>
+
+      <!-- Work History -->
+      <section id="work" class="card" aria-labelledby="work-h">
+        <h2 id="work-h">Work History</h2>
+        <p class="muted">This list may not be a complete work history or may require updates as expectations are added or are changed.</p>
+        <div class="timeline" id="work-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="copyright">© <span id="year"></span> Abel Garcia</span>
+    </footer>
+  </div>
+
+  <script>
+    // --- CONFIG: put your personal data here ---
+    const DATA = {
+      name: "Abel Garcia",
+      initials: "AG",
+      tagline: "Digital Forensics & Information Technology",
+      bio: "I`m a technology-minded professional with experience across IT Management, Application Development, and Public Safety.\n\nI am currently serving as a Law Enforcement Officer in the State of Missouri with an emphasis on Digital Forensics within MacOS, Windows, Linux, and Mobile environments.",
+      emails: {
+        tech: "abel@gtgwebmsp.com",
+        leo: "agarcia@buchmo.gov"
+      },
+      social: {
+        github: "https://github.com/abelss0n", 
+        instagram: "https://instagram.com/abelss0n"
+      },
+      education: [
+        { title: "Class A Peace Officer", date: "2022, Active", issuer: "Missouri POST", badge: "assets/badges/moleo.png" },
+        { title: "Cellebrite Certified Operator", date: "2024, Active", issuer: "Cellebrite", badge: "assets/badges/cco.png" },
+        { title: "Cellebrite Certified Physical Analyst", date: "2024, Active", issuer: "Cellebrite", badge: "assets/badges/ccpa.png" },
+        { title: "Cellebrite Advanced Smartphone Analysis", date: "2025", issuer: "Cellebrite", badge: "assets/badges/casa.png" }
+        // Hold until November 2025{ title: "A.S. Computer Science", date: "2025", issuer: "University of the People", badge: "assets/badges/uop.png" }
+      ],
+      work: [
+        {
+          role: "Investigator",
+          org: "Buchanan County Sheriff's Office",
+          period: "2023 — Present",
+          location: "Buchanan County, MO",
+          bullets: [
+            "Acted as a regional Task Force Officer with the Northwest Missouri Cyber Crimes Task Force.",
+            "Conducted criminal investigations into internet crimes against children across multiple counties.",
+            "Conducted digital forensic examinations on mobile devices used in crimes against persons.",
+            "Condcuted digital forensic examinations on desktop, laptop, mobile, and various digital and physical storage devices used in crimes against children.",
+            "Prepared legal process for the preservation, subpoena, and searches of electronic service provider data.",
+            "Maintained accurate and specific documentation and reporting on the examination of evidence and the investigation of criminal activities.",
+            "Assisted with local criminal investigations involving a technical component."
+          ]
+        },
+        {
+          role: "Solutions Engineer",
+          org: "GTGweb MSP",
+          period: "2020 — Present",
+          location: "Round Rock, TX",
+          bullets: [
+            "Managed web hosting, email, and endpoint (workstation/server) maintenance for SMB clients.",
+            "Advised on application and tool implementation, as well as created automation scripts for these tools as needed.",
+            "Developed applications and scripts as needed for existing client tools.",
+            "Conducted training of personnel as needed for onboarding, taking ownership of all technical support requests and implementations."
+          ]
+        },
+        {
+          role: "Police Officer",
+          org: "Maryville Public Safety",
+          period:"2022 — 2023",
+          location: "Maryville, MO",
+          bullets: [
+            "Conducted vehiclular and foot patrols of city roadways, parks, and both public and residential properties on twelve hour shifts.",
+            "Enforced state statutes and municipal ordinances within the city limits through the issuance of citations and execution of arrests/warrants.",
+            "Maintained required certifications and equipment as required by agency leadership."
+          ]
+        }
+      ]
+    };
+
+    // --- DOM wiring / rendering ---
+    const $ = (sel) => document.querySelector(sel);
+    const nameEl = $('#name');
+    const initialsEl = $('#initials');
+    const taglineEl = $('#tagline');
+    const bioEl = $('#bio');
+    const contactIcons = $('#contact-icons');
+    const yearEl = $('#year');
+
+    function hydrate() {
+      nameEl.textContent = DATA.name || 'Your Name';
+      initialsEl.textContent = (DATA.initials || (DATA.name || 'YN').split(' ').map(w=>w[0]).join('')).slice(0,3).toUpperCase();
+      taglineEl.textContent = DATA.tagline;
+      bioEl.innerHTML = (DATA.bio || '')
+        .split(/\n\n+/)
+        .map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`)
+        .join('');
+      yearEl.textContent = new Date().getFullYear();
+
+      // Render contact icons
+      contactIcons.innerHTML = `
+        <a href="mailto:${DATA.emails.tech}" aria-label="Tech Email">
+          <!-- Laptop SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill="currentColor" d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10h-2V5H5v10H3V5Zm-1 12h20v2H2v-2Z"/>
+          </svg>
+        </a>
+        <a href="mailto:${DATA.emails.leo}" aria-label="LEO Email">
+          <!-- Shield/Badge SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill="currentColor" d="M12 2 4 5v6c0 5.25 3.5 10.74 8 12 4.5-1.26 8-6.75 8-12V5l-8-3Zm0 2.18L18 6v4.82c0 4.18-2.79 8.57-6 9.9-3.21-1.33-6-5.72-6-9.9V6l6-1.82Z"/>
+          </svg>
+        </a>
+        <a href="${DATA.social.github}" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <!-- GitHub SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1.01.07 1.55 1.05 1.55 1.05.9 1.58 2.37 1.12 2.95.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.76 1.05a9.22 9.22 0 0 1 5.02 0c1.92-1.32 2.76-1.05 2.76-1.05.55 1.41.21 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.81-4.57 5.07.36.32.67.94.67 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+          </svg>
+        </a>
+        <a href="${DATA.social.instagram}" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+          <!-- Instagram SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 15.8 2.8 2.8 0 0 0 12 9.2Zm5-1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/>
+          </svg>
+        </a>
+      `;
+
+      // Render Education list
+      const eduRoot = $('#edu-list'); eduRoot.innerHTML = '';
+      DATA.education.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'edu';
+        div.innerHTML = `
+          <img src="${item.badge}" alt="${item.title} badge" />
+          <div>
+            <h4>${item.title}</h4>
+            <p>${item.date}</p>
+            ${item.issuer ? `<p class="muted">${item.issuer}</p>` : ''}
+          </div>`;
+        eduRoot.appendChild(div);
+      });
+
+      // Render Work timeline
+      const workRoot = $('#work-list'); workRoot.innerHTML = '';
+      DATA.work.forEach(job => {
+        const wrap = document.createElement('article');
+        wrap.className = 'job';
+        const bullets = (job.bullets||[]).map(b => `<li>${b}</li>`).join('');
+        wrap.innerHTML = `
+          <h4>${job.role} · ${job.org}</h4>
+          <div class="meta">${job.period}${job.location ? ' • ' + job.location : ''}</div>
+          ${bullets ? `<ul>${bullets}</ul>` : ''}
+        `;
+        workRoot.appendChild(wrap);
+      });
+    }
+
+    // Tabs behavior
+    function setActive(targetId) {
+      document.querySelectorAll('section.card').forEach(sec => sec.classList.remove('active'));
+      const target = document.getElementById(targetId);
+      if (target) target.classList.add('active');
+      document.querySelectorAll('.nav .tab').forEach(btn => {
+        btn.setAttribute('aria-current', btn.dataset.target === targetId ? 'page' : 'false');
+      });
+      const h = target && target.querySelector('h2');
+      if (h) h.focus && h.focus();
+    }
+
+    document.querySelectorAll('.nav .tab').forEach(btn => {
+      btn.addEventListener('click', () => setActive(btn.dataset.target));
+    });
+
+    hydrate();
+  </script>
+</body>
+</html>
