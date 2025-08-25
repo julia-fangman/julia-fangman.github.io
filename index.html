@@ -52,26 +52,36 @@
       <h2 id="ed-h">Education, Training, and Certifications</h2>
       <p class="muted">
         If the certification or license can expire, it will indicate active/expired after the year received.
-        If it does not, it will simply contain the year that it was received. 
-        All training will include the number of hours spent in the training. 
-        The list is in ascending order.
+        If it does not, it will simply contain the year that it was received. The list is in ascending order.
       </p>
 
-      <!-- New grouped lists -->
-      <div class="edugroup">
-        <h3>Education</h3>
+      <!-- Collapsible groups -->
+      <details class="edugroup" id="group-education">
+        <summary>
+          <span class="chev" aria-hidden="true">▸</span>
+          <span class="label">Education</span>
+          <span class="count" id="count-education">0</span>
+        </summary>
         <div class="edulist" id="edu-education" aria-live="polite"></div>
-      </div>
+      </details>
 
-      <div class="edugroup">
-        <h3>Certifications</h3>
+      <details class="edugroup" id="group-certification">
+        <summary>
+          <span class="chev" aria-hidden="true">▸</span>
+          <span class="label">Certifications</span>
+          <span class="count" id="count-certification">0</span>
+        </summary>
         <div class="edulist" id="edu-certification" aria-live="polite"></div>
-      </div>
+      </details>
 
-      <div class="edugroup">
-        <h3>Training</h3>
+      <details class="edugroup" id="group-training">
+        <summary>
+          <span class="chev" aria-hidden="true">▸</span>
+          <span class="label">Training</span>
+          <span class="count" id="count-training">0</span>
+        </summary>
         <div class="edulist" id="edu-training" aria-live="polite"></div>
-      </div>
+      </details>
       </section>
 
       <!-- Work History -->

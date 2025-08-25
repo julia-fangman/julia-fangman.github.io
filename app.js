@@ -21,12 +21,14 @@
     console.error(err);
   }
 
-  // ------- Education grouping & rendering -------
-  function renderEduGroup(rootId, items = []) {
+  // --- Education grouped rendering with counts ---
+  function renderEduGroupWithCount(rootId, countId, items = []) {
     const root = document.getElementById(rootId);
-    if (!root) return;
+    const countEl = document.getElementById(countId);
+    if (!root || !countEl) return;
+
     root.innerHTML = '';
-    items.forEach(item => {
+    (items || []).forEach(item => {
       const div = document.createElement('div');
       div.className = 'edu';
       div.innerHTML = `
@@ -39,6 +41,13 @@
       `;
       root.appendChild(div);
     });
+
+    // Update count
+    countEl.textContent = String(items.length);
+
+    // Optionally hide the whole group if empty:
+    const wrapper = root.closest('.edugroup');
+    if (wrapper) wrapper.style.display = items.length ? '' : 'none';
   }
 
   function groupEducation(list = []) {
@@ -110,9 +119,9 @@
 
     // Education groups
     const groups = groupEducation(DATA.education || []);
-    renderEduGroup('edu-education', groups.education);
-    renderEduGroup('edu-certification', groups.certification);
-    renderEduGroup('edu-training', groups.training);
+    renderEduGroupWithCount('edu-education', 'count-education', groups.education);
+    renderEduGroupWithCount('edu-certification', 'count-certification', groups.certification);
+    renderEduGroupWithCount('edu-training', 'count-training', groups.training);
 
     // Work timeline
     const workRoot = $('#work-list');
