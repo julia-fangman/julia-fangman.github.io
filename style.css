@@ -130,3 +130,31 @@ section.card.active { display: block; }
 
 footer { text-align: center; color: var(--muted); margin: 24px 0 12px; font-size: .9rem; }
 .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+
+/* Project content area spacing */
+.proj-body { padding: 12px; }
+.proj-body p { margin: 0 0 8px; }
+.proj-img {
+  margin: 12px 0;
+  text-align: center;
+}
+.proj-img img {
+  width: auto;
+  max-width: 100%;
+  max-height: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);
+  object-fit: contain;
+}
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.proj-link:hover { border-color: rgba(255,255,255,.28); transform: translateY(-1px); }

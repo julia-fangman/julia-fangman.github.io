@@ -61,6 +61,41 @@
     return groups;
   }
 
+  function renderProjects(projects = []) {
+    const root = document.getElementById('projects-list');
+    if (!root) return;
+    root.innerHTML = '';
+
+    projects.forEach(p => {
+      const details = document.createElement('details');
+      details.className = 'edugroup'; // reuse same look & feel
+      // closed by default, so no `open` attribute
+
+      details.innerHTML = `
+        <summary>
+          <span class="chev" aria-hidden="true">▸</span>
+          <span class="label">${p.name || 'Untitled Project'}</span>
+        </summary>
+        <div class="proj-body">
+          ${p.description ? `<p>${p.description}</p>` : ''}
+          ${p.image ? `<div class="proj-img"><img src="${p.image}" alt="${p.name} preview" /></div>` : ''}
+          ${p.url ? `
+            <p style="margin-top:10px;">
+              <a class="proj-link" href="${p.url}" target="_blank" rel="noopener noreferrer" aria-label="Open project: ${p.name}">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
+                </svg>
+                Visit project
+              </a>
+            </p>` : ''}
+        </div>
+      `;
+
+      root.appendChild(details);
+    });
+  }
+
   // ------- Hydration -------
   function hydrate(DATA) {
     const nameEl = $('#name');
@@ -139,7 +174,12 @@
         workRoot.appendChild(wrap);
       });
     }
+
+    // Projects
+    renderProjects(DATA.projects || []);
   }
+
+
 
   // ------- Tabs -------
   function setActive(targetId) {
