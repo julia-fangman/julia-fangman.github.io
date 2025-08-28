@@ -2,7 +2,8 @@
   "name": "Abel Garcia",
   "initials": "AG",
   "tagline": "Digital Forensics & Information Technology",
-  "bio": "I am a technology-minded professional with experience across IT Management, Application Development, and Public Safety. \n\nIn my primary role, I am a Criminal Investigator and Task Force Officer in the State of Missouri. I conduct digital forensics on MacOS, Windows, Linux, and Mobile environments. I am trained and certified to triage devices for criminal activity and files, perform forensic extractions, and then perform subsequent examinations of those extractions. \n\nI also work as a solutions technician with GTGweb MSP, where I work remotely to handle client support and development requests, maintain user endpoints through RMM toolsets, and onboard clients into our systems.",
+  "bio": "I am a technology-minded professional with experience across both the public and private sector in criminal investigations, cyber investigations, digital forensic extraction and examination, IT managed services, basic application development, automation scripting, and corporate forensics.\n\nIn my primary role, I am a Criminal Investigator and Task Force Officer in the State of Missouri. I conduct investigations into Internet Crimes Against Children as an affiliate and perform digital forensics on MacOS, Windows, Linux, and Mobile systems. I am trained and certified to triage devices for criminal activity and files, perform forensic extractions, and then perform subsequent examinations of those extractions. I also assist with the regional Crime Scene Investigation team in the collection of evidence for homicides, suspicious deaths, and other crimes against persons.\n\nI also work as a solutions technician with GTGweb MSP, where I work remotely to handle client support and development requests, maintain user endpoints through RMM toolsets, plan, configure, and deploy backup and disaster recovery options, and onboard clients into our systems. I currently manage the support queue for around 30 end users across our SMB clients each with their own endpoint, as well as two Meraki networking sites and just over a dozen hosted websites.",
+  "photo": "assets/photos/me.png",
   "emails": {
     "tech": "abel@gtgwebmsp.com",
     "leo": "agarcia@buchmo.gov"
@@ -17,6 +18,7 @@
     { "title": "Class A Peace Officer", "date": "2022, Active", "issuer": "Missouri POST", "badge": "assets/badges/moleo.png", "kind": "certification" },
     { "title": "Cellebrite Certified Operator", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/cco.png", "kind": "certification" },
     { "title": "Cellebrite Certified Physical Analyst", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/ccpa.png", "kind": "certification" },
+    { "title": "Crime Scene Investigation School", "date": "2024, 40 Hours", "issuer": "JCSO Criminalistics Laboratory", "badge": "assets/badges/jcso.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: Windows", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: MacOS", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: Linux", "date": "2024, 14 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
@@ -30,13 +32,13 @@
       "period": "2023 — Present",
       "location": "Buchanan County, MO",
       "bullets": [
-        "Acted as a regional Task Force Officer with the Northwest Missouri Cyber Crimes Task Force.",
-        "Conducted criminal investigations into internet crimes against children across multiple counties.",
-        "Conducted digital forensic examinations on mobile devices used in crimes against persons.",
-        "Conducted digital forensic examinations on desktop, laptop, mobile, and various digital and physical storage devices used in crimes against children.",
-        "Prepared legal process for the preservation, subpoena, and searches of electronic service provider data.",
-        "Maintained accurate and specific documentation and reporting on the examination of evidence and the investigation of criminal activities.",
-        "Assisted with local criminal investigations involving a technical component."
+        "Act as a regional Task Force Officer with the Northwest Missouri Cyber Crimes Task Force.",
+        "Conduct criminal investigations into internet crimes against children across multiple counties.",
+        "Conduct digital forensic examinations on mobile devices used in crimes against persons.",
+        "Conduct digital forensic examinations on desktop, laptop, mobile, and various digital and physical storage devices used in crimes against children.",
+        "Prepare legal process for the preservation, subpoena, and searches of electronic service provider data.",
+        "Maintain accurate and specific documentation and reporting on the examination of evidence and the investigation of criminal activities.",
+        "Assist with local criminal investigations involving a technical component."
       ]
     },
     {
@@ -45,10 +47,10 @@
       "period": "2018 — Present",
       "location": "Round Rock, TX",
       "bullets": [
-        "Managed web hosting, email, and endpoint (workstation/server) maintenance for SMB clients.",
-        "Advised on application and tool implementation, as well as created automation scripts for these tools as needed.",
-        "Developed applications and scripts as needed for existing client tools.",
-        "Conducted training of personnel as needed for onboarding, taking ownership of all technical support requests and implementations."
+        "Manage web hosting, email, and endpoint (workstation/server) maintenance for SMB clients.",
+        "Advise on application and tool implementation, as well as created automation scripts for these tools as needed.",
+        "Develop applications and scripts as needed for existing client tools.",
+        "Conduct training of personnel as needed for onboarding, taking ownership of all technical support requests and implementations."
       ]
     },
     {

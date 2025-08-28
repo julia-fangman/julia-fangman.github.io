@@ -158,3 +158,116 @@ footer { text-align: center; color: var(--muted); margin: 24px 0 12px; font-size
   border-radius: 10px;
 }
 .proj-link:hover { border-color: rgba(255,255,255,.28); transform: translateY(-1px); }
+
+/* Load Aurebesh */
+@font-face {
+  font-family: 'Aurebesh';
+  src: url('assets/fonts/aurebesh.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Name crossfade stack */
+.name-stack {
+  position: relative;
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.name-stack .face {
+  display: inline-block;
+  transition: opacity .3s ease;
+  white-space: nowrap;
+}
+
+.name-stack .face-normal {
+  /* stays in normal flow to determine size */
+  position: relative;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+}
+
+.name-stack .face-aurebesh {
+  position: absolute;
+  inset: 0;              /* overlay the normal face */
+  font-family: 'Aurebesh', Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+}
+
+/* Animations (unchanged) */
+@keyframes fontSwapOut {
+  0%, 35% { opacity: 1; }
+  45%, 85% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fontSwapIn {
+  0%, 35% { opacity: 0; }
+  45%, 85% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.name-stack .face-normal   { animation: fontSwapOut 10s ease-in-out infinite; }
+.name-stack .face-aurebesh { animation: fontSwapIn  10s ease-in-out infinite; }
+
+.name-stack:hover .face-normal,
+.name-stack:hover .face-aurebesh { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .name-stack .face-normal,
+  .name-stack .face-aurebesh { animation: none; }
+  .name-stack .face-aurebesh { opacity: 0; }
+}
+
+.profile-photo {
+  margin: 0 0 12px 0;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* Keep a nice portrait shape; adjust ratio if you like */
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  aspect-ratio: 4 / 5;      /* common portrait ratio */
+  object-fit: cover;        /* fills the frame, trims edges if needed */
+  background: rgba(255,255,255,.02);
+}
+
+.hero {
+  text-align: center;
+  padding: 28px 8px 8px;
+}
+
+.home-title {
+  margin: 0 0 8px;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.home-subtitle {
+  margin: 0 0 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* Make the icon row match the subtitle height */
+.home-icons {
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  font-size: 1rem;   /* icon size ties to subtitle size */
+}
+.home-icons svg { width: 1em; height: 1em; }
+
+/* Aurebesh line */
+.home-aurebesh {
+  margin: 6px 0 0;
+  font-family: 'Aurebesh', Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+  font-size: 1rem;
+  opacity: .9;
+}

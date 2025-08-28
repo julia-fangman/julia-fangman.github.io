@@ -17,12 +17,16 @@
       <div class="brand">
         <div class="avatar" aria-hidden="true" id="initials">AG</div>
         <div class="title">
-          <h1 id="name">Your Name</h1>
+          <h1 class="name-stack" aria-label="Your Name">
+            <span class="face face-normal" id="name-normal">Your Name</span>
+            <span class="face face-aurebesh" id="name-aurebesh" aria-hidden="true">Your Name</span>
+          </h1>
           <p><span class="muted" id="tagline">Digital Forensics & Information Technology</span></p>
         </div>
       </div>
       <nav class="nav" aria-label="Primary">
-        <button class="tab" data-target="about" aria-current="page">About</button>
+        <button class="tab" data-target="home" aria-current="page">Home</button>
+        <button class="tab" data-target="about">About</button>
         <button class="tab" data-target="education">Education & Training</button>
         <button class="tab" data-target="work">Work History</button>
         <button class="tab" data-target="projects">Projects</button>
@@ -31,6 +35,23 @@
     </header>
 
     <main>
+      <!-- Home -->
+      <section id="home" class="card" aria-labelledby="home-h">
+        <div class="hero">
+          <h2 id="home-h" class="visually-hidden">Home</h2>
+          <h1 id="home-title" class="home-title">Howdy, I am Abel Garcia.</h1>
+          <h2 id="home-subtitle" class="home-subtitle">
+            Criminal Investigator | Digital Forensic Technician | Hobby Developer | Star Wars Fan.
+          </h2>
+
+          <!-- Icons row (same style as other icons, no "Contact" header) -->
+          <div class="icons home-icons" id="home-icons" aria-label="Quick contact links"></div>
+
+          <!-- Aurebesh line -->
+          <p class="home-aurebesh">May The Force Be With You, Always</p>
+        </div>
+      </section>
+
       <!-- About -->
       <section id="about" class="card active" aria-labelledby="about-h">
         <div class="row">
@@ -42,6 +63,12 @@
             </p>
           </div>
           <aside>
+            <!-- Profile Photo -->
+            <figure class="profile-photo" id="profile-photo-wrap" hidden>
+              <img id="profile-photo" src="" alt="Portrait" loading="lazy" />
+            </figure>
+
+            <!-- Contact Icons -->
             <h3>Contact</h3>
             <div class="icons" id="contact-icons" aria-label="Contact links"></div>
           </aside>
