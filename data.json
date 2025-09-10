@@ -2,7 +2,7 @@
   "name": "Julia Fangman",
   "initials": "JF",
   "tagline": "Criminal Justice & Data Analytics",
-  "bio": "I am currently a Cyber Crimes Case Manager with academic training in Criminal Justice and Data Analytics, experienced in investigative support, data-driven decision-making, and cross-agency coordination. Committed to advancing mission-driven organizations throughethical service, strategic analysis, and a passion for public good.",
+  "bio": "I am a Cyber Crimes Case Manager with academic training in Criminal Justice and Data Analytics, bringing experience in investigative support, data-driven decision-making, and cross-agency collaboration. I am dedicated to advancing mission-driven organizations through ethical service, strategic analysis, and a strong commitment to the public good.",
   "photo": "assets/photos/IMG_8519.png",
   "emails": {
     "tech": "juliafangman13@gmail.com",
@@ -27,9 +27,9 @@
       "period": "2024 — Present",
       "location": "Buchanan County, MO",
       "bullets": [
-        "Manage investigative data and intelligence analysis to support cybercrime cases across local and state systems.",
-        "Prepare leads and case documentation to assist law enforcement officers and prosecutors.",
-        "Coordinate cross-agency information sharing and digital evidence handling."
+    "Manage investigative data and perform intelligence analysis to support cybercrime cases across local and state systems.",
+    "Prepare leads and compile case documentation to assist law enforcement officers and prosecutors.",
+    "Coordinate cross-agency information sharing and oversee digital evidence handling."
       ]
     },
     {
@@ -38,8 +38,11 @@
       "period": "2021 — 2024",
       "location": "St. Joseph, MO",
       "bullets": [
-        "Led a team of counselors in delivering recreational and sports activities for children ages 5–11.",
-        "Promoted teamwork, discipline, and positive personal growth among campers."
+    "Led and supervised a team of counselors in planning and delivering recreational and sports activities for children ages 5–11.",
+    "Developed and implemented structured daily schedules that promoted teamwork, discipline, and personal growth among campers.",
+    "Fostered a safe, inclusive, and engaging environment that encouraged social and emotional development.",
+    "Communicated regularly with parents and staff to provide updates on camper progress and address concerns promptly.",
+    "Trained new counselors on best practices, safety protocols, and effective activity facilitation."
       ]
     },
     {
@@ -59,8 +62,12 @@
       "period": "Summer 2022",
       "location": "St. Joseph, MO",
       "bullets": [
-        "Supervised and supported adolescents (ages 14–20) in rehabilitation programs.",
-        "Balanced structure and empathy to encourage rehabilitation and positive outcomes."
+    "Supervised and supported adolescents (ages 14–20) in structured rehabilitation programs, ensuring safety and compliance with program rules.",
+    "Balanced structure and empathy to encourage rehabilitation, personal responsibility, and positive behavioral outcomes.",
+    "Developed individualized support strategies to address each adolescent’s unique needs and challenges.",
+    "Collaborated with counselors, therapists, and staff to monitor progress and provide consistent guidance.",
+    "Facilitated group activities and discussions that promoted social skills, conflict resolution, and emotional growth.",
+    "Maintained accurate documentation of incidents, progress, and treatment plans for staff review."
       ]
     }
   ],
@@ -68,7 +75,7 @@
     {
       "name": "Recidivism Data Analysis Project",
       "url": "https://github.com/julia-fangman/Capstone-Project-2024",
-      "description": "Capstone project analyzing recidivism rates and disparities in sentencing outcomes in the U.S. justice system. Integrated machine learning models and Tableau visualizations to identify predictive factors of recidivism.",
+      "description": "This capstone project analyzed recidivism rates and disparities in sentencing outcomes within the U.S. justice system. It integrated machine learning models and Tableau visualizations to identify predictive factors contributing to recidivism.",
       "image": "assets/projects/recidivism_project.png"
     }
   ]
