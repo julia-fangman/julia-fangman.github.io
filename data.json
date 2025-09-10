@@ -2,7 +2,7 @@
   "name": "Julia Fangman",
   "initials": "JF",
   "tagline": "Criminal Justice & Data Analytics",
-  "bio": "I am currently a Cyber Crimes Case Manager with academic training in Criminal Justice and Data Analytics, experienced in investigative support, data-driven decision-making, and cross-agency coordination. Committed to advancing mission-driven organizations throughethical service, strategic analysis, and a passion for public good..",
+  "bio": "I am currently a Cyber Crimes Case Manager with academic training in Criminal Justice and Data Analytics, experienced in investigative support, data-driven decision-making, and cross-agency coordination. Committed to advancing mission-driven organizations throughethical service, strategic analysis, and a passion for public good.",
   "photo": "assets/photos/IMG_8519.png",
   "emails": {
     "tech": "juliafangman13@gmail.com",
@@ -17,8 +17,8 @@
     { "title": "B.S. in Criminal Justice, Minors in Psychology & Business Administration", "date": "2023", "issuer": "Truman State University", "badge": "assets/badges/mwsu.png", "kind": "education" },
     { "title": "M.S in Data Analytics", "date": "2024", "issuer": "Northwest Missouri State University", "badge": "assets/badges/moleo.png", "kind": "education" },
     { "title": "CPR", "date": "2025, Active", "issuer": "", "badge": "assets/badges/cco.png", "kind": "certification" },
-    { "title": "Big Brothers Big Sisters", "date": "2025, Active", "badge": "assets/badges/jcso.png", "kind": "volunteer" },
-    { "title": "Safety Town", "date": "2025, 10 Hours", "issuer": "St. Joseph Safety Counsel", "badge": "assets/badges/nw3c.png", "kind": "volunteer" },
+    { "title": "Big Brothers Big Sisters of America", "date": "2025, Active", "badge": "assets/badges/jcso.png", "kind": "volunteer" },
+    { "title": "Safety Town", "date": "2025, 10 Hours", "issuer": "St. Joseph Safety Counsel", "badge": "assets/badges/nw3c.png", "kind": "volunteer" }
   ],
   "work": [
     {
@@ -27,45 +27,49 @@
       "period": "2024 — Present",
       "location": "Buchanan County, MO",
       "bullets": [
-        "Act as a regional Task Force Officer with the Northwest Missouri Cyber Crimes Task Force.",
-        "Conduct criminal investigations into internet crimes against children across multiple counties.",
-        "Conduct digital forensic examinations on mobile devices used in crimes against persons.",
-        "Conduct digital forensic examinations on desktop, laptop, mobile, and various digital and physical storage devices used in crimes against children.",
-        "Prepare legal process for the preservation, subpoena, and searches of electronic service provider data.",
-        "Maintain accurate and specific documentation and reporting on the examination of evidence and the investigation of criminal activities.",
-        "Assist with local criminal investigations involving a technical component."
+        "Manage investigative data and intelligence analysis to support cybercrime cases across local and state systems.",
+        "Prepare leads and case documentation to assist law enforcement officers and prosecutors.",
+        "Coordinate cross-agency information sharing and digital evidence handling."
       ]
     },
     {
-      "role": "Solutions Engineer",
-      "org": "GTGweb MSP",
-      "period": "2018 — Present",
-      "location": "Round Rock, TX",
+      "role": "Camp Counselor / Unit Lead",
+      "org": "Genesis Health Clubs",
+      "period": "2021 — 2024",
+      "location": "St. Joseph, MO",
       "bullets": [
-        "Manage web hosting, email, and endpoint (workstation/server) maintenance for SMB clients.",
-        "Advise on application and tool implementation, as well as created automation scripts for these tools as needed.",
-        "Develop applications and scripts as needed for existing client tools.",
-        "Conduct training of personnel as needed for onboarding, taking ownership of all technical support requests and implementations."
+        "Led a team of counselors in delivering recreational and sports activities for children ages 5–11.",
+        "Promoted teamwork, discipline, and positive personal growth among campers."
       ]
     },
     {
-      "role": "Police Officer",
-      "org": "Maryville Public Safety",
-      "period": "2022 — 2023",
-      "location": "Maryville, MO",
+      "role": "Barista",
+      "org": "Scooter's Coffee",
+      "period": "2019 — 2023",
+      "location": "St. Joseph, MO & Kirksville, MO",
       "bullets": [
-        "Conducted vehicular and foot patrols of city roadways, parks, and both public and residential properties on twelve hour shifts.",
-        "Enforced state statutes and municipal ordinances within the city limits through the issuance of citations and execution of arrests/warrants.",
-        "Maintained required certifications and equipment as required by agency leadership."
+        "Prepared and served high-quality coffee and beverages in a fast-paced environment.",
+        "Provided friendly customer service while managing cash and point-of-sale operations.",
+        "Maintained cleanliness, organization, and efficiency during peak service hours."
+      ]
+    },
+    {
+      "role": "Youth Specialist (Intern)",
+      "org": "Riverbend Treatment Center",
+      "period": "Summer 2022",
+      "location": "St. Joseph, MO",
+      "bullets": [
+        "Supervised and supported adolescents (ages 14–20) in rehabilitation programs.",
+        "Balanced structure and empathy to encourage rehabilitation and positive outcomes."
       ]
     }
   ],
   "projects": [
     {
-      "name": "Personal Website Project",
-      "url": "https://abelss0n.github.io/",
-      "description": "A simple website project that is intended to be customizable for other users and expandable over time as it suits my needs for a personal website. Created as a single page java application.",
-      "image": "assets/projects/personal_website.png"
+      "name": "Recidivism Data Analysis Project",
+      "url": "https://github.com/julia-fangman/Capstone-Project-2024",
+      "description": "Capstone project analyzing recidivism rates and disparities in sentencing outcomes in the U.S. justice system. Integrated machine learning models and Tableau visualizations to identify predictive factors of recidivism.",
+      "image": "assets/projects/recidivism_project.png"
     }
   ]
 }
