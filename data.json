@@ -74,7 +74,7 @@
   "projects": [
     {
       "name": "Recidivism Data Analysis Project",
-      "url": "https://github.com/julia-fangman/Capstone-Project-2024",
+      "url": "https://www.overleaf.com/read/fwnjfvqnjsgt#aa683d",
       "description": "This capstone project analyzed recidivism rates and disparities in sentencing outcomes within the U.S. justice system. It integrated machine learning models and Tableau visualizations to identify predictive factors contributing to recidivism.",
       "image": "assets/projects/recidivism_project.png"
     }
