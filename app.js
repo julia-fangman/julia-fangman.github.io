@@ -52,7 +52,7 @@
 
   function groupEducation(list = []) {
     const norm = (k) => (k || 'certification').toLowerCase();
-    const groups = { education: [], certification: [], training: [] };
+    const groups = { education: [], certification: [], volunteer: [] };
     list.forEach(item => {
       const kind = norm(item.kind);
       if (groups[kind]) groups[kind].push(item);
@@ -198,7 +198,7 @@
     const groups = groupEducation(DATA.education || []);
     renderEduGroupWithCount('edu-education', 'count-education', groups.education);
     renderEduGroupWithCount('edu-certification', 'count-certification', groups.certification);
-    renderEduGroupWithCount('edu-training', 'count-training', groups.training);
+    renderEduGroupWithCount('edu-volunteering', 'count-volunteering', groups.volunteer);
 
     // Work timeline
     const workRoot = $('#work-list');
