@@ -3,10 +3,10 @@
   "initials": "JF",
   "tagline": "Criminal Justice & Data Analytics",
   "bio": "I am currently a Cyber Crimes Case Manager with academic training in Criminal Justice and Data Analytics, experienced in investigative support, data-driven decision-making, and cross-agency coordination. Committed to advancing mission-driven organizations throughethical service, strategic analysis, and a passion for public good..",
-  "photo": "/Users/nwmocctf/Documents/GitHub/julia-fangman.github.io/assets/photos/IMG_8519.png",
+  "photo": "/assets/photos/IMG_8519.png",
   "emails": {
-    "personal": "juliafangman13@gmail.com",
-    "le": "jfangman@buchmo.gov"
+    "tech": "juliafangman13@gmail.com",
+    "leo": "jfangman@buchmo.gov"
   },
   "social": {
     "github": "https://github.com/julia-fangman",
