@@ -13,12 +13,12 @@
     "instagram": "https://instagram.com/juliafangman"
   },
   "education": [
-    { "title": "High School Diploma", "date": "2019", "issuer": "Central High School", "badge": "assets/badges/chs.png", "kind": "education" },
-    { "title": "B.S. in Criminal Justice, Minors in Psychology & Business Administration", "date": "2023", "issuer": "Truman State University", "badge": "assets/badges/mwsu.png", "kind": "education" },
-    { "title": "M.S in Data Analytics", "date": "2024", "issuer": "Northwest Missouri State University", "badge": "assets/badges/moleo.png", "kind": "education" },
-    { "title": "CPR", "date": "2025, Active", "issuer": "", "badge": "assets/badges/cco.png", "kind": "certification" },
-    { "title": "Big Brothers Big Sisters of America", "date": "2025, Active", "badge": "assets/badges/jcso.png", "kind": "volunteer" },
-    { "title": "Safety Town", "date": "2025, 10 Hours", "issuer": "St. Joseph Missouri Safety Counsel", "badge": "assets/badges/nw3c.png", "kind": "volunteer" }
+    { "title": "High School Diploma", "date": "2019", "issuer": "Central High School", "badge": "assets/badges/3620.png", "kind": "education" },
+    { "title": "B.S. in Criminal Justice, Minors in Psychology & Business Administration", "date": "2023", "issuer": "Truman State University", "badge": "assets/badges/Truman.png", "kind": "education" },
+    { "title": "M.S in Data Analytics", "date": "2024", "issuer": "Northwest Missouri State University", "badge": "assets/badges/NWMSU.png", "kind": "education" },
+    { "title": "CPR", "date": "2025, Active", "issuer": "", "badge": "assets/badges/CPR.png", "kind": "certification" },
+    { "title": "Big Brothers Big Sisters of America", "date": "2025, Active", "badge": "assets/badges/BBBS.png", "kind": "volunteer" },
+    { "title": "Safety Town", "date": "2025, 10 Hours", "issuer": "St. Joseph Missouri Safety Counsel", "badge": "assets/badges/ST.png", "kind": "volunteer" }
   ],
   "work": [
     {
