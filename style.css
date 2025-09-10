@@ -159,7 +159,7 @@ footer { text-align: center; color: var(--muted); margin: 24px 0 12px; font-size
 }
 .proj-link:hover { border-color: rgba(255,255,255,.28); transform: translateY(-1px); }
 
-/* Load Aurebesh */
+/* Load Aurebesh
 @font-face {
   font-family: 'Aurebesh';
   src:
@@ -169,7 +169,7 @@ footer { text-align: center; color: var(--muted); margin: 24px 0 12px; font-size
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 /* Name crossfade stack */
 .name-stack {
