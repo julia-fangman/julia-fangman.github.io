@@ -37,9 +37,21 @@
       ]
     },
     {
-      "role": "Camp Counselor / Unit Lead / Kids Club Atendant",
+  "role": "Kids Club Attendant",
+  "org": "Genesis Health Clubs",
+  "period": "2023 — Present",
+  "location": "St. Joseph, MO",
+  "bullets": [
+      "Supervise children up to age 12, ensuring a safe and welcoming environment.",
+      "Keep children engaged with age-appropriate games, activities, and entertainment.",
+      "Monitor behavior and intervene as needed to maintain a positive and safe setting.",
+      "Communicate with parents and staff regarding children's participation and any concerns."
+  ]
+},
+    {
+      "role": "Camp Counselor / Unit Lead",
       "org": "Genesis Health Clubs",
-      "period": "2021 — Present",
+      "period": "2021 — 2024",
       "location": "St. Joseph, MO",
       "bullets": [
     "Led and supervised a team of counselors in planning and delivering recreational and sports activities for children ages 5–11.",
