@@ -137,9 +137,9 @@
     // --- Home hero content ---
     const homeTitle = document.getElementById('home-title');
     const homeSubtitle = document.getElementById('home-subtitle');
-    if (homeTitle)  homeTitle.textContent = `Hey, I am ${DATA.name || 'Julia Fangman'}.`;
+    if (homeTitle)  homeTitle.textContent = `Hey, it's ${DATA.name || 'Julia Fangman'} here.`;
     if (homeSubtitle) {
-      homeSubtitle.textContent = "Cyber Crimes Case Manager | TSU & NWMO State Alum | Collegiate Athlete.";
+      homeSubtitle.textContent = "Cyber Crimes Case Manager | TSU & NWMSU Alum | Former Collegiate Tennis Athlete.";
     }
 
     // --- Home icons (reuse same markup as contact icons) ---
