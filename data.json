@@ -17,6 +17,7 @@
     { "title": "B.S. in Criminal Justice, Minors in Psychology & Business Administration", "date": "2023", "issuer": "Truman State University", "badge": "assets/badges/Truman.png", "kind": "education" },
     { "title": "M.S in Data Analytics", "date": "2024", "issuer": "Northwest Missouri State University", "badge": "assets/badges/NWMSU.png", "kind": "education" },
     { "title": "CPR", "date": "2025, Active", "issuer": "", "badge": "assets/badges/CPR.png", "kind": "certification" },
+    { "title": "Certified Cyber Crime Examiner (3CE)", "date": "2025, Active", "issuer": "NW3C", "badge": "assets/badges/nw3c_logo.png", "kind": "certification" },
     { "title": "Big Brothers Big Sisters of America", "date": "2025, Active", "badge": "assets/badges/BBBS.png", "kind": "volunteer" },
     { "title": "Safety Town", "date": "2025, 10 Hours", "issuer": "St. Joseph Missouri Safety Counsel", "badge": "assets/badges/ST.png", "kind": "volunteer" }
   ],
